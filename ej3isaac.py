@@ -1,15 +1,19 @@
-"""2.1. Escriba, usando comparaciones,
-un algoritmo que muestre el estado delagua (hielo, liquido, vapor)
-en función de su temperatura."""
+"""2.2. Escriba un algoritmo que determine la categoría deportiva de un usuario
+en función de su edad.- 6 a7 años: “benjamin”- 8 a 9 años: “ alevín”
+- 10 a 11 años:“infantil”- 12 años y más: “cadete”"""
 
 n=0
-n=int(input("Dime un número de grados a los que esté expuesto el agua entre -20º y 100º "))
 
-if(n>100):
-    print("El estado del agua sería Vapor ")
+n=int(input("Dime tu edad para determinar tu categoría deportiva ")
+      
+if((n==6)and(n==7)):
+      print("Su hijo/a es Benjamin ")
+elif(n==8)and(n==9):
+      print("Su hijo/a es Alevín ")
+elif(n==10)and(n==11):
+    print("Su hijo/a es Infantil ")
+elif(n>=12):
+    print("Su hijo/a es Cadete ")
 else:
-    if(n>0):
-        print("El estado del agua sería Líquido ")
-if(n<0):
-    print("El estado del agua sería Sólido ")
-    
+      print("Su hijo/a es demasiado joven para entrar en una categoría ")
+
