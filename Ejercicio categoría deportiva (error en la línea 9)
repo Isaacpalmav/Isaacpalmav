@@ -4,16 +4,15 @@ en función de su edad.- 6 a7 años: “benjamin”- 8 a 9 años: “ alevín”
 
 n=0
 
-n=int(input("Dime tu edad para determinar tu categoría deportiva ")
+n=int(input("Dime tu edad para determinar tu categoría deportiva "))
       
-if((n==6)and(n==7)):
+if((n>=6)and(n<=7)):
       print("Su hijo/a es Benjamin ")
-elif(n==8)and(n==9):
+elif(n>=8)and(n<=9):
       print("Su hijo/a es Alevín ")
-elif(n==10)and(n==11):
-    print("Su hijo/a es Infantil ")
+elif(n>=10)and(n<=11):
+      print("Su hijo/a es Infantil ")
 elif(n>=12):
-    print("Su hijo/a es Cadete ")
+      print("Su hijo/a es Cadete ")
 else:
       print("Su hijo/a es demasiado joven para entrar en una categoría ")
-
