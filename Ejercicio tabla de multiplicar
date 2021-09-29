@@ -1,0 +1,6 @@
+n=int(input("Dime un número para decirte su tabla de multiplicación "))
+x=1
+while(x<=10):
+    z=n*x
+    print(n,"x",x,"=",z)
+    x=x+1
