@@ -1,0 +1,12 @@
+import random
+
+x=random.randint(1,10)
+
+if(int(input("Adivina el número en solo dos intentos: "))==x):
+    print("Has acertado!!")
+else:
+    if(int(input("Has fallado, te queda un último intento: "))==x):
+        print("Has acertado!!")
+    else:
+        print("Has fallado, has usado todos tus intentos, el número generado era:", x)
+    
