@@ -1,0 +1,144 @@
+import random
+
+def apartado_a():
+
+    contador=0
+    contador2=0
+    lista=[]
+
+    while(len(lista)<15):
+        a=random.randint(1,10)
+        lista.append(a)
+
+    for i in lista:
+        if(i%2==0):
+            contador=contador+1
+    for i in lista:
+        if(i%2==1):
+            contador2=contador2+1
+    print(lista)
+    
+    print("Los números pares que hay en la lista son", contador,"y",contador2, "impares")
+
+
+
+def apartado_b():
+    lista=[]
+
+    while(len(lista)<15):
+        a=random.randint(1,10)
+        lista.append(a)
+        if(len(lista)==3 or len(lista)==6 or len(lista)==9 or len(lista)==12):
+            #print(a)
+            pass
+       
+    total=0
+    for i in range(3, len(lista), 3):
+        #print(lista[i])
+        total=total+lista[i]
+        #print(i)
+    
+    print("la lista generada es: ",lista)
+    print("la suma de los números de la lista en las posiciones divisibles por 3 son: ", total)
+
+def apartado_c():
+    vect=[]
+    x=0
+    f1=1
+    f2=0
+    res=0
+    
+    
+    vect.append(0)
+    vect.append(1)
+    while(x<13):
+        res=f1+f2
+        f2=f1
+        f1=res
+        vect.append(res)
+        x=x+1
+               
+    print("lista con fibonacci hasta los 15 valores: ",vect)
+
+
+def apartado_d():
+    lista=[]
+    lista2=[]
+    n=14
+    while(len(lista)<15):
+        print("Introduzca valores para ponerlos al revés en una lista: ")
+        x=int(input())
+        lista.append(x)
+    
+    print(lista)
+    
+    while(n>=0):
+        o=lista[n]
+        lista2.append(o)
+        n=n-1
+    
+    print(lista2)
+
+def apartado_e():
+    lista=[]
+
+    while(len(lista)<9):
+        print("Introduzca valores sin repetir de entre el 1 al 10 a la lista: ")
+        x=int(input())
+        lista.append(x)
+    
+        while(x>10) or (x<0):
+            print("Escriba sólo valores entre el 1 al 10 sin repetirse: ")
+            lista.remove(x)
+            x=int(input())
+            lista.append(x)
+        
+        while(lista.count(x)==2):
+            print("Introduzca un valor que no se repita del 1 al 10: ")
+            lista.remove(x)
+            x=int(input())
+            lista.append(x)
+    
+    
+    print(lista)  
+
+    
+def apartado_f():
+    #Con valores introducidos por el usuario, que deben formar una secuencia creciente.
+
+    lista=[]
+
+    acumulador=0
+    n=0
+
+    while(len(lista)<14):
+        print("Introduzca valores crecientes a la lista: ")
+        acumulador=n
+        x=int(input())
+        lista.append(x)
+        n=x
+        while(acumulador>x):
+            print("Sólo valores mayores al anteriormente introducido: ")
+            lista.remove(x)
+            x=int(input())
+            lista.append(x)
+        
+    print(lista) 
+    
+
+
+def apartado_g():
+    lista=[]
+
+    while(len(lista)<10):
+        print("Introduzca valores que no se repitan a la lista: ")
+        x=int(input())
+        lista.append(x)
+        
+        while(lista.count(x)==2):
+            print("Introduzca un valor que no se repita: ")
+            lista.remove(x)
+            x=int(input())
+            lista.append(x)
+    
+    print(lista)  
